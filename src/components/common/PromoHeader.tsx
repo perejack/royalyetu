@@ -26,7 +26,7 @@ export const PromoHeader = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-yellow-300 mr-3" />
-                <span>254784555661</span>
+                <span>2540107682502</span>
               </div>
             </div>
             <button
