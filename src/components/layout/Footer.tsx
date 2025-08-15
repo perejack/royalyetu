@@ -7,7 +7,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <p className="flex items-center">
-              <a href="tel:+2540107682502" className="hover:text-blue-400">(+254) 010 768 2502</a>
+              <a href="tel:+2540107682502" className="hover:text-blue-400">(+2540107682502</a>
             </p>
           </div>
           <div>
