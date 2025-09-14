@@ -153,7 +153,7 @@ export const Header = () => {
               >
                 Call Us
               </motion.span>
-              <span className="text-xs font-medium">+254 010 768 2502</span>
+              <span className="text-xs font-medium">+254 751 716 735</span>
             </div>
           </a>
           
