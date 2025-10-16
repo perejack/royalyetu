@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .animate-fade-in {
+    @apply opacity-0 transition-opacity duration-1000 ease-in-out;
+  }
+  
+  .animate-fade-in.appear {
+    @apply opacity-100;
+  }
+  
+  .animate-slide-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+  
+  .animate-slide-up.appear {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .animate-slide-right {
+    @apply opacity-0 -translate-x-8 transition-all duration-700 ease-out;
+  }
+  
+  .animate-slide-right.appear {
+    @apply opacity-100 translate-x-0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-600;
+}
+
+/* Smooth transitions */
+.page-transition {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+  @apply relative overflow-hidden transition-all duration-300 ease-in-out;
+}
+
+.btn-hover-effect::after {
+  content: '';
+  @apply absolute inset-0 bg-white opacity-0 transition-opacity duration-300 ease-in-out;
+}
+
+.btn-hover-effect:hover::after {
+  @apply opacity-20;
+}
